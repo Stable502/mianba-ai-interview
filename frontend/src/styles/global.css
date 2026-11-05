@@ -1,0 +1,85 @@
+:root {
+  --brand: #3B5BFF;
+  --brand-hover: #3352e6;
+  --brand-soft: #EEF4FF;
+  --bg: #F4F6FA;
+  --ink: #1A1D27;
+  --text: #4B5563;
+  --muted: #9CA3AF;
+  --border: #E5E9F0;
+  --border-light: #F0F2F8;
+  --green: #16A34A;
+  --green-soft: #E6F7EE;
+  --orange: #D97706;
+  --orange-soft: #FFF3E0;
+  --red: #EF4444;
+  --red-soft: #FEE2E2;
+  --purple: #8B5CF6;
+  --cyan: #06B6D4;
+  --amber: #F59E0B;
+  --radius-card: 12px;
+  --radius-btn: 8px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#app {
+  height: 100%;
+}
+
+body {
+  font-family: "Noto Sans SC", "PingFang SC", "Microsoft YaHei", -apple-system,
+    BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: var(--bg);
+  color: var(--ink);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Ant Design 主题覆盖 */
+:root {
+  --ant-color-primary: #3B5BFF;
+}
+
+.ant-btn-primary {
+  background: var(--brand);
+}
+.ant-btn-primary:hover {
+  background: var(--brand-hover) !important;
+}
+
+a {
+  color: var(--brand);
+}
+
+/* 通用滚动条 */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: #d5dae5;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #b9c1d1;
+}
+
+/* 卡片通用 */
+.card {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-card);
+}
+
+.text-muted {
+  color: var(--muted);
+}
+.text-secondary {
+  color: #6b7280;
+}

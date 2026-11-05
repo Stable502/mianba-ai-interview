@@ -1,0 +1,37 @@
+# ===== 密钥与本地配置（上传前必须排除）=====
+.env
+.env.*
+!.env.example
+!**/.env.example
+!frontend/.env.development
+*.pem
+*.key
+*.p12
+*.pfx
+*.keystore
+
+# ===== 依赖 / 构建产物 / 缓存 =====
+node_modules/
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+dist/
+build/
+.vite/
+.pytest_cache/
+.mypy_cache/
+*.log
+.DS_Store
+Thumbs.db
+
+# ===== 编辑器 / 工具数据 =====
+.idea/
+.vscode/
+.workbuddy/
+
+# ===== 个人材料（含姓名学号、演示数据，不放公开仓库）=====
+实习报告_*.docx
+项目答辩PPT/
+面试记录导出.json
+面试记录导出.html
